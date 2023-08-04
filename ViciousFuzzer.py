@@ -19,7 +19,7 @@ rangeFuzz = []
 junk = "A"
 
 sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-connect = sock.connect(('192.168.0.179',21))
+connect = sock.connect(('TARGET_IP',21))
 sock.recv(1024)
 sock.send(b'USER noname\r\n')
 sock.recv(1024)
@@ -47,7 +47,7 @@ while(1):
 print("############## PART II ##############")
 time.sleep(5)
 sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-connect = sock.connect(('192.168.0.179',21))
+connect = sock.connect(('TARGET_IP',21))
 
 for i in range(rangeFuzz[0],rangeFuzz[1]):
     try:
