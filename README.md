@@ -1,2 +1,2 @@
-# VucuiosFuzzer
-fuzzers for Freefloat FTP server
+# ViciousFuzzer
+fuzzers for Freefloat FTP server 1.0
